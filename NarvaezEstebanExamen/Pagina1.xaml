@@ -4,9 +4,38 @@
              x:Class="NarvaezEstebanExamen.Pagina1"
              Title="Pagina1">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Editor
+            x:Name="editor_id"
+            Placeholder="Ingrese el ID"
+            AutoSize="TextChanges"
+            HeightRequest="100"/>
+
+        <Editor
+            x:Name="editor_nombre"
+            Placeholder="Ingrese el nombre de la persona que realiza la recarga"
+            AutoSize="TextChanges"
+            HeightRequest="100"/>
+        <Editor
+            x:Name="editor_numero"
+            Placeholder="Ingrese el número de telefono"
+            AutoSize="TextChanges"
+            HeightRequest="100"/>
+        <Label
+            x:Name="ultima"
+            Text="La ultima recarga realizada fue:"/>
+
+        <Label
+            x:Name="label_nombre"
+            Text="{Binding Nombre}"/>
+
+        <Label
+            x:Name="label_numero"
+            Text="{Binding Numero}"/>
+
+        <Button
+            x:Name = "GuardarRecarga"
+            Text="Guardar recarga"
+            Clicked="GuardarRecarga_Clicked"/>
+
     </VerticalStackLayout>
 </ContentPage>
