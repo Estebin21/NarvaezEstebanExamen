@@ -17,22 +17,26 @@
 
             <Label 
                 Grid.Row="0" Grid.Column="0" 
+                TextColor="Blue"
                 Text="Esteban"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
             <Label 
                 Grid.Row="0" Grid.Column="1" 
                 Text="Alejandro"
+                TextColor="Red"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
             <Label 
                 Grid.Row="1" Grid.Column="1" 
                 Text="Acurio"
+                TextColor="Orange"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
             <Label 
                 Grid.Row="1" Grid.Column="0" 
                 Text="Narváez"
+                TextColor="Cyan"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
 
